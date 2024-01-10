@@ -149,6 +149,7 @@ li {
   align-items: center;
   justify-content: center;
   border: #221 solid 5px;
+  position: relative;
 }
 
 #front-page {
@@ -171,12 +172,11 @@ li {
 
 /*Top piece*/
 .top-bar {
-  width: 550px;
+  width: 575px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  background-color: darkgray;
-  color: white;
+  background-color: rgb(255, 255, 255);
   height: 120px;
   box-sizing: border-box;
   text-align: center;
@@ -197,4 +197,28 @@ li {
   display: block;
   border-left: 5px solid black; 
   height: 100%; 
+}
+
+.screen-container:before {
+  height: 520px;
+  width: 4%;
+  position: absolute;
+  display: block;
+  background: white;
+  content: " ";
+  border: 5px solid black;
+  z-index: 2;
+  left: -4%;
+}
+
+.screen-container:after {
+  height: 520px;
+  width: 4%;
+  position: absolute;
+  display: block;
+  background: white;
+  content: " ";
+  border: 5px solid black;
+  z-index: 2;
+  right: -4%;
 }
