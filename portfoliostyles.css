@@ -310,3 +310,9 @@ li {
 .start-btn {
   animation: bounce 2.5s infinite;
 } 
+
+#arcade #menu {
+  display: none;
+}
+
+
