@@ -1,4 +1,84 @@
 @import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+div {
+  display: block;
+}
+/*HEADER*/
+#david {
+  max-width: 400px;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-left: 25px;
+  border-radius: 40px;
+}
+.title {
+  height: 100%;
+  width: 100%;
+  font-family: 'Press Start 2P';
+  color: #fff090;
+  grid-area: 1/2/2/5;
+  white-space: nowrap;
+  max-height: 100px;
+  margin-bottom: 40px;
+}
+
+.start-btn:hover { 
+  box-shadow: box-shadow: 
+  7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+  transform: translateY(4px); 
+}
+
+.start-btn {
+  
+  font-family: 'Press Start 2P';
+  background-color: #4FAF44;
+  border-color: grey;
+  border-style: solid;
+    border-width: .125em 0;
+    box-shadow: -.375em 0 0 -.125em,
+        .375em 0 0 -.125em;
+    margin: 0 .5em;
+    padding: .5em .125em;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        background-color: inherit;
+        border: inherit;
+        border-width: 0 .125em;
+        bottom: .375em;
+        content: '';
+        left: -.5em;
+        pointer-events: none;
+        position: absolute;
+        top: .375em;
+        right: -.5em;
+        z-index: -1;
+    }
+
+    &:after {
+        background-color: inherit;
+        border: inherit;
+        border-width: 0 .125em;
+        bottom: .125em;
+        content: '';
+        left: -.375em;
+        position: absolute;
+        top: .125em;
+        right: -.375em;
+        z-index: -2;
+    }
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 * {
   margin: 0;
@@ -12,9 +92,9 @@ html, body {
   font-family: 'Press Start 2P';
   font-size: 1rem;
   line-height: 2;
-  height: 100%;
   background-color: #221;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 a {
@@ -48,3 +128,7 @@ li {
   left: -6em;
 }
 
+#arcade {
+  margin-left: 40px;
+  margin-top: 10px;
+}
