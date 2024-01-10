@@ -292,6 +292,47 @@ li {
   transform: skew(5deg);
 }
 
+.bottom {
+  position: absolute;
+  top: 97.15%;
+  height: 100px;
+  max-height: 100px;
+  width: 520px;
+  border-bottom: 100px solid white;
+}
+
+.bottom:after {
+  height: 100px;
+  width: 4%;
+  position: absolute;
+  top: 100%;
+  left: -5.5%;
+  background: white;
+  content: "";
+  border: 5px solid black;
+}
+
+.bottom:before {
+  height: 100px;
+  width: 4%;
+  position: absolute;
+  top: 100%;
+  left: 99.75%;
+  background: white;
+  content: "";
+  border: 5px solid black;
+}
+
+.bottom2 {
+  position: absolute;
+  top: 100%;
+  height: 100px;
+  max-height: 100px;
+  width: 515px;
+  border: 5px solid black;  
+}
+
+
 
 /*Bouncing text animation*/
 
