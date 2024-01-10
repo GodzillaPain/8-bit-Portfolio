@@ -150,6 +150,7 @@ li {
   justify-content: center;
   border: #221 solid 5px;
   position: relative;
+  border-radius: 20px;
 }
 
 #front-page {
@@ -225,15 +226,25 @@ li {
 
 /*bottom board*/
 .board {
-  height: 200px;
-  width: 66%;
   position: absolute;
-  transform: rotateX(70deg);
-  border-bottom: 250px solid darkgrey;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 0;
-	width: 500px;
   top: 87.5%;
+  height: 0;
+  width: 500px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 250px solid darkgrey;
+  transform: rotateX(70deg);
 }
 
+.board::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 100%;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 250px solid white;
+  transform: rotateX(70deg);
+}
