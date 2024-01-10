@@ -38,7 +38,7 @@ div {
     border-width: .125em 0;
     box-shadow: -.375em 0 0 -.125em,
         .375em 0 0 -.125em;
-    margin-left: 60px;
+    margin-left: 75px;
     margin-bottom: 10px;
     padding: .5em .125em;
     position: relative;
@@ -224,6 +224,36 @@ li {
   right: -4%;
 }
 
+
+.stripes {
+  height: 111px;
+  width: 4%;
+  position: absolute;
+  left: 50%;
+  background: rgb(172, 172, 28);
+  transform: skew(10deg);
+}
+
+.stripes:before, .stripes:after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  content: " ";
+  background: rgb(27, 170, 8);
+}
+
+.stripes:after {
+  height: 100%;
+  width: 33%;
+  position: absolute;
+  top: 0%;
+  left: -20%;
+  content: " ";
+  background: rgb(199, 100, 7);
+}
+
 /*bottom board*/
 .board {
   position: absolute;
@@ -236,15 +266,47 @@ li {
   transform: rotateX(70deg);
 }
 
-.board::before {
-  content: "";
+.board:before {
+  height: 250px;
+  width: 4%;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 100%;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 250px solid white;
-  transform: rotateX(70deg);
+  top: -2%;
+  left: -5.5%;
+  background: white;
+  content: "";
+  border: 5px solid black;
+  z-index: 2;
+  transform: skew(-5deg);
 }
+
+.board:after {
+  height: 250px;
+  width: 4%;
+  position: absolute;
+  top: -2%;
+  right: -5.5%;
+  background: white;
+  content: "";
+  border: 5px solid black;
+  z-index: 2;
+  transform: skew(5deg);
+}
+
+
+/*Bouncing text animation*/
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.start-btn {
+  animation: bounce 2.5s infinite;
+} 
