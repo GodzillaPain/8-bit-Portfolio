@@ -381,3 +381,13 @@ li {
 .webpage {
   width: 100vw;
 }
+
+
+/* About Page */
+
+.about-page {
+  display: none;
+  grid-template: 1fr 1fr/1fr 1.5fr 1fr;
+  color: white;
+  font-family: "Press Start 2P";
+}
