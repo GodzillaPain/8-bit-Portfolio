@@ -5,9 +5,10 @@ div {
 /*HEADER*/
 #david {
   max-width: 400px;
-  max-height: 200px;
+  max-height: 75px;
   justify-content: flex-start;
-  margin-left: 75px;
+  align-items: center;
+  margin-left: 150px;
   border-radius: 40px;
 }
 
@@ -88,15 +89,19 @@ p {
 }
 
 html, body {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  align-items: flex-start; 
+  display: flex;
+  justify-content: center;
   font-family: 'Press Start 2P';
   font-size: 1rem;
   line-height: 2;
   background-color: rgb(95, 95, 38);
   text-transform: uppercase;
-  margin-top: 30px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; 
+  
 }
 
 a {
@@ -133,13 +138,15 @@ li {
 #arcade {
   margin-left: 40px;
   margin-top: 10px;
+  width: 30vw;
 }
 
 /*Static Screen*/
 
 .screen-container {
+  transition: transform 0.5s ease;
   width: 500px;
-  height: 525px;
+  height: 400px;
   background-color: darkgrey;
   padding: 20px;
   margin-top: 0;
@@ -151,6 +158,7 @@ li {
   border: #221 solid 5px;
   position: relative;
   border-radius: 20px;
+  z-index: 1000;
 }
 
 #front-page {
@@ -167,8 +175,9 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: flex-start;
+  height: 100vh;
+  margin-top: 50px;
 }
 
 /*Top piece*/
@@ -201,7 +210,7 @@ li {
 }
 
 .screen-container:before {
-  height: 520px;
+  height: 400px;
   width: 4%;
   position: absolute;
   display: block;
@@ -210,10 +219,11 @@ li {
   border: 5px solid black;
   z-index: 2;
   left: -4%;
+  top: -2%;
 }
 
 .screen-container:after {
-  height: 520px;
+  height: 400px;
   width: 4%;
   position: absolute;
   display: block;
@@ -222,6 +232,8 @@ li {
   border: 5px solid black;
   z-index: 2;
   right: -4%;
+  top: -2%;
+
 }
 
 
@@ -255,9 +267,10 @@ li {
 }
 
 /*bottom board*/
+
 .board {
   position: absolute;
-  top: 87.5%;
+  top: 65.5%;
   height: 0;
   width: 500px;
   border-left: 25px solid transparent;
@@ -294,7 +307,7 @@ li {
 
 .bottom {
   position: absolute;
-  top: 97.15%;
+  top: 75%;
   height: 100px;
   max-height: 100px;
   width: 520px;
@@ -356,4 +369,15 @@ li {
   display: none;
 }
 
+.hide {
+  display: none;
+}
 
+.expanded {
+  width: 60vw;
+  transform: scale(1.5); /* Adjust the scale factor as needed */
+}
+
+.webpage {
+  width: 100vw;
+}

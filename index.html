@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donkey Kong Arcade</title>
+  <title>David Kalajdzic Arcade</title>
   <link rel="stylesheet" href="portfoliostyles.css"> 
 </head>
 <body>
+  <div class="webpage">
   <div class="container">
     <div class="top-bar">
       <div class="stripes"></div>
@@ -14,35 +15,34 @@
       <div class="right-bar"></div>
     </div>
     <div class="screen-container">
-      <div class="screen-blur"></div>
-      <nav id="front-page"> 
-        <div class="title">
-          <img id="david" 
-          src="assets/Profile Picture.jpg" 
-          alt="profile-image"/>
-          <p class="label">FRONT-END WEB DEVELOPER</p>
-          <button class="start-btn"  onclick="toggleMenu()">Press to Start</button> 
-          <hr />
-        <div id="arcade">
-          <div id="menu">
-            <ol>
-              <li><a class="arrow"><i class="fas fa-arrow-alt-right"></i>About Me</a></li>
-              <li><a class="arrow"><i class="fas fa-arrow-alt-right"></i>Projects</a></li>
-              <li><a class="arrow"><i class="fas fa-arrow-alt-right"></i>Skills</a></li>
-              <li><a class="arrow"><i class="fas fa-arrow-alt-right"></i>Contact</a></li>
-              <li><a class="arrow"><i class="fas fa-arrow-alt-right"></i>Socials</a></li>
-            </ol>
+      <nav id="front-page">
+          <div class="title">
+              <img id="david" src="assets/Profile Picture.jpg" alt="profile-image"/>
+              <p class="label">FRONT-END WEB DEVELOPER</p>
+              <button class="start-btn" id="startButton" onclick="toggleMenu(event)">Press to Start</button>
+              <hr />
           </div>
-
-        </div>
       </nav>
+      <div id="arcade">
+        <div id="menu">
+          <ol>
+              <li><a class="arrow" href="#about-me"><i class="fas fa-arrow-alt-right"></i>About Me</a></li>
+              <li><a class="arrow" href="#projects"><i class="fas fa-arrow-alt-right"></i>Projects</a></li>
+              <li><a class="arrow" href="#skills"><i class="fas fa-arrow-alt-right"></i>Skills</a></li>
+              <li><a class="arrow" href="#contact"><i class="fas fa-arrow-alt-right"></i>Contact</a></li>
+              <li><a class="arrow" href="#socials"><i class="fas fa-arrow-alt-right"></i>Socials</a></li>
+          </ol>
       </div>
+      
+      </div>
+  </div>  
       <div class="board"></div>
       <div class="bottom">
         <div class="bottom2"></div>
       </div>
    </div>
   </div>
+</div>
   <script defer src="8-bit.js"></script>
 </body>
 
