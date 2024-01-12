@@ -375,7 +375,7 @@ li {
 
 .expanded {
   width: 60vw;
-  transform: scale(1.5); /* Adjust the scale factor as needed */
+  transform: scale(1.5);
 }
 
 .webpage {
