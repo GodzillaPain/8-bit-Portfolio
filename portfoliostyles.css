@@ -136,9 +136,8 @@ li {
 }
 
 #arcade {
-  margin-left: 40px;
-  margin-top: 10px;
   width: 30vw;
+  top: 0%;
 }
 
 /*Static Screen*/
@@ -365,8 +364,20 @@ li {
   animation: bounce 2.5s infinite;
 } 
 
-#arcade #menu {
-  display: none;
+#arcade,
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#menu {
+  display: none; 
+  margin-top: 70%;
+  position: absolute;
+  transform: translateY(-50%);
 }
 
 .hide {
@@ -386,8 +397,14 @@ li {
 /* About Page */
 
 .about-page {
-  display: none;
+ /* display: none;*/
   grid-template: 1fr 1fr/1fr 1.5fr 1fr;
   color: white;
   font-family: "Press Start 2P";
+  max-width: 300px;
+  max-height: 300px;
+  align-items: center;
+  text-align: center;
+  top: 0%;
+  justify-content: center;
 }
