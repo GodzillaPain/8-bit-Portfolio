@@ -97,7 +97,8 @@ html, body {
   font-family: 'Press Start 2P';
   font-size: 1rem;
   line-height: 2;
-  background-color: rgb(95, 95, 38);
+  background-image: url(assets/retro.jpg);
+  background-size: contain;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -145,10 +146,10 @@ li {
 /*Static Screen*/
 
 .screen-container {
-  transition: transform 0.5s ease;
-  width: 500px;
-  height: 400px;
-  background-color: darkgrey;
+  transition: transform 1s ease;
+  width: 35vw;
+  height: 52vh;
+  background-color: #8C898F;
   padding: 20px;
   margin-top: 0;
   box-sizing: border-box;
@@ -187,7 +188,7 @@ li {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(255, 255, 255);
+  background-color: #246484;
   height: 120px;
   box-sizing: border-box;
   text-align: center;
@@ -211,11 +212,11 @@ li {
 }
 
 .screen-container:before {
-  height: 400px;
   width: 4%;
+  height: 52vh;
   position: absolute;
   display: block;
-  background: white;
+  background: #246484;
   content: " ";
   border: 5px solid black;
   z-index: 2;
@@ -224,11 +225,11 @@ li {
 }
 
 .screen-container:after {
-  height: 400px;
+  height: 52vh;
   width: 4%;
   position: absolute;
   display: block;
-  background: white;
+  background: #246484;
   content: " ";
   border: 5px solid black;
   z-index: 2;
@@ -243,7 +244,7 @@ li {
   width: 4%;
   position: absolute;
   left: 50%;
-  background: rgb(172, 172, 28);
+  background: #d93caf;
   transform: skew(10deg);
 }
 
@@ -254,7 +255,7 @@ li {
   top: 0%;
   left: 80%;
   content: " ";
-  background: rgb(27, 170, 8);
+  background: #fc7cd3;
 }
 
 .stripes:after {
@@ -264,7 +265,7 @@ li {
   top: 0%;
   left: -20%;
   content: " ";
-  background: rgb(199, 100, 7);
+  background: #c9dee7;
 }
 
 /*bottom board*/
@@ -273,20 +274,20 @@ li {
   position: absolute;
   top: 65.5%;
   height: 0;
-  width: 500px;
+  width: 35vw;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  border-bottom: 250px solid darkgrey;
+  border-bottom: 250px solid #424043;
   transform: rotateX(70deg);
 }
 
 .board:before {
-  height: 250px;
+  height: 32vh;
   width: 4%;
   position: absolute;
   top: -2%;
   left: -5.5%;
-  background: white;
+  background: #246484;
   content: "";
   border: 5px solid black;
   z-index: 2;
@@ -294,12 +295,12 @@ li {
 }
 
 .board:after {
-  height: 250px;
+  height: 32vh;
   width: 4%;
   position: absolute;
   top: -2%;
   right: -5.5%;
-  background: white;
+  background: #246484;
   content: "";
   border: 5px solid black;
   z-index: 2;
@@ -312,7 +313,7 @@ li {
   height: 100px;
   max-height: 100px;
   width: 520px;
-  border-bottom: 100px solid white;
+  border-bottom: 100px solid #246484;
 }
 
 .bottom:after {
@@ -321,7 +322,7 @@ li {
   position: absolute;
   top: 100%;
   left: -5.5%;
-  background: white;
+  background: #246484;
   content: "";
   border: 5px solid black;
 }
@@ -332,7 +333,7 @@ li {
   position: absolute;
   top: 100%;
   left: 99.75%;
-  background: white;
+  background: #246484;
   content: "";
   border: 5px solid black;
 }
@@ -401,7 +402,7 @@ li {
 .about-page {
  /* display: none;*/
   grid-template: 1fr 1fr/1fr 1.5fr 1fr;
-  color: white;
+  color: #246484;
   font-family: "Press Start 2P";
   max-width: 55vw;
   max-height: 300px;
