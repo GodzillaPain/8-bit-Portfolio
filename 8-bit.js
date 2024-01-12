@@ -17,24 +17,39 @@ function toggleMenu(event) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  var menuLinks = document.querySelectorAll('#menu a');
+  var aboutMeLink = document.querySelector('#menu a[href="#about-me"]');
   var screenContainer = document.querySelector('.screen-container');
   var aboutPage = document.getElementById('about-me');
   var menu = document.getElementById('menu');
 
-  menuLinks.forEach(function (link) {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
+  aboutMeLink.addEventListener('click', function (event) {
+    event.preventDefault();
 
-      // Toggle the 'expanded' class on screenContainer
-      screenContainer.classList.toggle('expanded');
+    screenContainer.classList.toggle('expanded');
 
-      // Hide the menu
-      menu.style.display = 'none';
+    menu.style.display = 'none';
 
-      // Toggle the 'hide' class on aboutPage
-      aboutPage.classList.toggle('hide');
-    });
+    aboutPage.classList.toggle('hide');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var skillsLink = document.querySelector('#menu a[href="#skills"]');
+  var screenContainer = document.querySelector('.screen-container');
+  var skillsPage = document.getElementById('skills'); // Updated to use getElementById
+  var menu = document.getElementById('menu');
+
+  skillsLink.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    // Toggle the 'expanded' class on screenContainer
+    screenContainer.classList.toggle('expanded');
+
+    // Hide the menu
+    menu.style.display = 'none';
+
+    // Toggle the 'hide' class on skillsPage
+    skillsPage.classList.toggle('hide');
   });
 });
 
@@ -46,14 +61,13 @@ function goBack() {
   var title = document.querySelector(".title");
   var screenContainer = document.querySelector(".screen-container");
   var aboutPage = document.getElementById("about-me");
+  var skillsPage = document.getElementById("skills");
 
-  // Toggle the 'expanded' class on screenContainer
   screenContainer.classList.toggle('expanded');
 
-  // Hide the aboutPage
   aboutPage.classList.add('hide');
+  skillsPage.classList.add('hide');
 
-  // Always make the menu visible
   menu.style.display = "block";
 }
 

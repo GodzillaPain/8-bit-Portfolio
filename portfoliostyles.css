@@ -171,7 +171,6 @@ li {
   justify-content: flex-start; 
   height: 100vh; 
   padding-top: 10px;
-  width: ;
 }
 
 .container {
@@ -185,7 +184,7 @@ li {
 
 /*Top piece*/
 .top-bar {
-  width: 575px;
+  width: 42vw;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -313,7 +312,7 @@ li {
   top: 75%;
   height: 100px;
   max-height: 100px;
-  width: 520px;
+  width: 36vw;
   border-bottom: 100px solid #246484;
 }
 
@@ -448,10 +447,26 @@ li {
   position: absolute;
   top: 5%; 
   right: 10%; 
-  background-color: darkgrey;
+  background-color: #8C898F;
   border: none;
+  animation: 3.5s bounce infinite;
 }
 
 #backButtonRed {
   max-width: 50px;
+}
+
+
+/*Skills page*/
+
+.skills-page {
+max-width: 55vw;
+max-height: 300px;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+
+#logo1, #logo2 {
+  max-width: 10vh;
 }
