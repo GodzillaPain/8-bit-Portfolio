@@ -39,3 +39,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+function goBack() {
+  console.log("Button clicked");
+
+  var menu = document.getElementById("menu");
+  var title = document.querySelector(".title");
+  var screenContainer = document.querySelector(".screen-container");
+  var aboutPage = document.getElementById("about-me");
+
+  // Toggle the 'expanded' class on screenContainer
+  screenContainer.classList.toggle('expanded');
+
+  // Hide the aboutPage
+  aboutPage.classList.add('hide');
+
+  // Always make the menu visible
+  menu.style.display = "block";
+}
+

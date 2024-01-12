@@ -401,10 +401,36 @@ li {
   grid-template: 1fr 1fr/1fr 1.5fr 1fr;
   color: white;
   font-family: "Press Start 2P";
-  max-width: 300px;
+  max-width: 55vw;
   max-height: 300px;
   align-items: center;
   text-align: center;
-  top: 0%;
   justify-content: center;
+  margin-top: -1000px;
+}
+
+.about-p {
+  max-width: 45vw;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+.title2 {
+  font-family: 'Press Start 2P';
+  color: #fff090;
+  margin-top: -200px;
+}
+@media (max-width: 768px) {
+  .title2 {
+    margin-top: -50px; 
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title2 {
+    margin-top: -75px; 
+  }
 }
