@@ -426,7 +426,8 @@ li {
   font-family: 'Press Start 2P';
   color: #fff090;
   margin-top: -100px;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
+  vertical-align: top;
 }
 @media (max-width: 768px) {
   .title2 {
@@ -461,12 +462,28 @@ li {
 
 .skills-page {
 max-width: 55vw;
-max-height: 300px;
+max-height: 60vh;
 align-items: center;
 text-align: center;
 justify-content: center;
+
+
 }
 
 #logo1, #logo2 {
   max-width: 10vh;
+}
+
+.skills-page p {
+  max-height: 20vh;
+  margin-top: 0%;
+  font-size: .5rem;
+  color: white;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .skills-page p {
+    font-size: 0.25rem; 
+  }
 }
