@@ -71,3 +71,19 @@ function goBack() {
   menu.style.display = "block";
 }
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const image1 = document.querySelector(".bit1");
+  const image2 = document.querySelector(".bit2");
+
+  setInterval(() => {
+    if (image1.classList.contains("hide")) {
+      image1.classList.remove("hide");
+      image2.classList.add("hide");
+    } else {
+      image1.classList.add("hide");
+      image2.classList.remove("hide");
+    }
+  }, 1000); 
+});
