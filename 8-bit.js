@@ -1,3 +1,13 @@
+function playHoverSound() {
+  var sound = document.getElementById('hoverSound');
+  sound.play();
+}
+
+function playclickSound() {
+  var sound = document.getElementById('clickSound');
+  sound.play();
+}
+
 function toggleMenu(event) {
   console.log("Function called");
 
@@ -36,20 +46,34 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var skillsLink = document.querySelector('#menu a[href="#skills"]');
   var screenContainer = document.querySelector('.screen-container');
-  var skillsPage = document.getElementById('skills'); // Updated to use getElementById
+  var skillsPage = document.getElementById('skills'); 
   var menu = document.getElementById('menu');
 
   skillsLink.addEventListener('click', function (event) {
     event.preventDefault();
 
-    // Toggle the 'expanded' class on screenContainer
     screenContainer.classList.toggle('expanded');
 
-    // Hide the menu
     menu.style.display = 'none';
 
-    // Toggle the 'hide' class on skillsPage
     skillsPage.classList.toggle('hide');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var contactLink = document.querySelector('#menu a[href="#contact"]');
+  var screenContainer = document.querySelector('.screen-container');
+  var contactPage = document.getElementById('contact'); 
+  var menu = document.getElementById('menu');
+
+  contactLink.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    screenContainer.classList.toggle('expanded');
+
+    menu.style.display = 'none';
+
+    contactPage.classList.toggle('hide');
   });
 });
 
@@ -62,12 +86,14 @@ function goBack() {
   var screenContainer = document.querySelector(".screen-container");
   var aboutPage = document.getElementById("about-me");
   var skillsPage = document.getElementById("skills");
+  var contactPage = document.getElementById("contact");
+
 
   screenContainer.classList.toggle('expanded');
 
   aboutPage.classList.add('hide');
   skillsPage.classList.add('hide');
-
+  contactPage.classList.add('hide');
   menu.style.display = "block";
 }
 

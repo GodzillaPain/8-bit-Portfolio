@@ -14,6 +14,16 @@ background: linear-gradient(rgba(18, 16, 16, 0) 70%, rgba(0, 0, 0, 0.25) 70%),
     );
   background-size: 100% 4px, 30px 100%;
   animation: flicker 10ms infinite;
+  box-shadow:
+  rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+  rgba(0, 0, 0, 0.06) 0px 2px 1px,
+  rgba(0, 0, 0, 0.09) 0px 4px 2px,
+  rgba(0, 0, 0, 0.09) 0px 8px 4px,
+  rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
 }
 
 /*HEADER*/
@@ -214,16 +224,26 @@ li {
 }
 
 /*Top piece*/
+
 .top-bar {
   width: 42vw;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   background-color: #246484;
-  height: 120px;
-  box-sizing: border-box;
+  height: 17vh;
   text-align: center;
   border: 5px solid black;
+  box-shadow:
+  rgba(0, 0, 0, 0.17) 0px -23px 15px 0px inset,
+  rgba(0, 0, 0, 0.15) 0px -36px 10px 0px inset,
+  rgba(0, 0, 0, 0.1) 0px -79px 30px 0px inset,
+  rgba(0, 0, 0, 0.06) 0px 2px 1px,
+  rgba(0, 0, 0, 0.09) 0px 4px 2px,
+  rgba(0, 0, 0, 0.09) 0px 8px 4px,
+  rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ 
 }
 
 .right-bar::before {
@@ -231,7 +251,10 @@ li {
   margin-right: 20px;
   display: block;
   border-left: 5px solid black; 
-  height: 100%; 
+  height: 100%;
+  box-shadow: 
+   rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+   rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .left-bar::before {
@@ -253,6 +276,8 @@ li {
   z-index: 2;
   left: -4%;
   top: -2%;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  
 }
 
 .screen-container:after {
@@ -266,17 +291,22 @@ li {
   z-index: 2;
   right: -4%;
   top: -2%;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 
 }
 
 /*Stripes for top*/
 .stripes {
-  height: 111px;
+  height: 15.75vh;
   width: 4%;
   position: absolute;
   left: 50%;
   background: #d93caf;
   transform: skew(10deg);
+  box-shadow: 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -40px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 5px inset;
 }
 
 .stripes:before, .stripes:after {
@@ -287,6 +317,10 @@ li {
   left: 80%;
   content: " ";
   background: #fc7cd3;
+  box-shadow: 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -40px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 3px inset;
 }
 
 .stripes:after {
@@ -297,6 +331,10 @@ li {
   left: -20%;
   content: " ";
   background: #c9dee7;
+  box-shadow: 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -40px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 /*stripes for bottom*/
@@ -307,6 +345,10 @@ li {
   position: absolute;
   left: 28%;
   background: #d93caf;
+  box-shadow: 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -40px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
 }
 
@@ -318,6 +360,10 @@ li {
   left: 80%;
   content: " ";
   background: #fc7cd3;
+  box-shadow: 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -40px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .stripes2:after {
@@ -328,6 +374,10 @@ li {
   left: -20%;
   content: " ";
   background: #c9dee7;
+  box-shadow: 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -40px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 /*bottom board*/
@@ -378,6 +428,7 @@ li {
   max-height: 100px;
   width: 36vw;
   border-bottom: 100px solid #246484;
+  
 }
 
 .bottom:after {
@@ -389,6 +440,16 @@ li {
   background: #246484;
   content: "";
   border: 5px solid black;
+  box-shadow:
+  rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+  rgba(0, 0, 0, 0.06) 0px 2px 1px,
+  rgba(0, 0, 0, 0.09) 0px 4px 2px,
+  rgba(0, 0, 0, 0.09) 0px 8px 4px,
+  rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
 }
 
 .bottom:before {
@@ -400,6 +461,16 @@ li {
   background: #246484;
   content: "";
   border: 5px solid black;
+  box-shadow:
+  rgba(0, 0, 0, 0.17) 0px -23px 30px 5px inset,
+  rgba(0, 0, 0, 0.15) 0px -36px 40px 5px inset,
+  rgba(0, 0, 0, 0.1) 0px -79px 45px 5px inset,
+  rgba(0, 0, 0, 0.06) 0px 2px 1px,
+  rgba(0, 0, 0, 0.09) 0px 4px 2px,
+  rgba(0, 0, 0, 0.09) 0px 8px 4px,
+  rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
 }
 
 .bottom2 {
@@ -411,6 +482,16 @@ li {
   max-height: 100px;
   width: 60vw;
   border: 5px solid black;  
+  box-shadow:
+  rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+  rgba(0, 0, 0, 0.06) 0px 2px 1px,
+  rgba(0, 0, 0, 0.09) 0px 4px 2px,
+  rgba(0, 0, 0, 0.09) 0px 8px 4px,
+  rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
 }
 
 
@@ -431,6 +512,10 @@ li {
 
 .start-btn {
   animation: bounce 2.5s infinite;
+  box-shadow: 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -40px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 10px inset;
 } 
 
 #arcade,
@@ -573,4 +658,47 @@ justify-content: center;
   align-items: center;
   margin-left: 20%;
   max-height: 20vh;
+}
+
+
+/*Contact Page*/
+
+.title3 {
+  max-width: 100%;
+  font-family: 'Press Start 2P';
+  color: #fff090;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.contact-page {
+  max-width: 55vw;
+  max-height: 60vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.contact-page p {
+  max-height: 20vh;
+  margin-top: 0%;
+  font-size: .5rem;
+  color: white;
+  overflow: hidden;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.logo-container img {
+  margin-right: 10px;
+  height: 10vh;
 }

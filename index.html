@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Kalajdzic Arcade</title>
-  <link rel="stylesheet" href="portfoliostyles.css"> 
+  <link rel="stylesheet" href="portfoliostyles.css">
 </head>
+
 <body>
   <div class="webpage">
-    
+
     <div class="container">
-      
+
       <div class="top-bar">
         <div class="stripes"></div>
         <div class="left-bar"></div>
         <div class="right-bar"></div>
       </div>
+
       <div class="screen-container">
-        <nav id="front-page" >
-          
+        <nav id="front-page">
+
           <div class="title">
             <div class="images">
-              <img 
-                src="assets/8bitpix.png"
-                alt="character"
-                id="8-bit-1"
-                class="hide bit1">
-              <img 
-                src="assets/8bitpix (2).png"
-                alt="character"
-                id="8-bit-2"
-                class="hide bit2">
-            <img id="david" src="assets/Profile Picture.jpg" alt="profile-image"/>
+              <img src="assets/8bitpix.png" alt="character" id="8-bit-1" class="hide bit1">
+              <img src="assets/8bitpix (2).png" alt="character" id="8-bit-2" class="hide bit2">
+              <img id="david" src="assets/Profile Picture.jpg" alt="profile-image" />
             </div>
             <p class="label">FRONT-END WEB DEVELOPER</p>
-            <button class="start-btn" id="startButton" onclick="toggleMenu(event)">Press to Start</button>
+            <button class="start-btn" id="startButton" onclick="toggleMenu(event); playclickSound()">Press to Start</button>
             <hr />
           </div>
         </nav>
+
         <div id="arcade">
           <div id="menu">
             <ol>
-              <li><a class="arrow" href="#about-me"><i class="fas fa-arrow-alt-right"></i>About Me</a></li>
-              <li><a class="arrow" href="#projects"><i class="fas fa-arrow-alt-right"></i>Projects</a></li>
-              <li><a class="arrow" href="#skills"><i class="fas fa-arrow-alt-right"></i>Skills</a></li>
-              <li><a class="arrow" href="#contact"><i class="fas fa-arrow-alt-right"></i>Contact</a></li>
-              <li><a class="arrow" href="#socials"><i class="fas fa-arrow-alt-right"></i>Socials</a></li>
+              <li><a class="arrow" href="#about-me" onmouseover="playHoverSound()"><i class="fas fa-arrow-alt-right"></i>About Me</a></li>
+              <li><a class="arrow" href="#projects" onmouseover="playHoverSound()"><i class="fas fa-arrow-alt-right"></i>Projects</a></li>
+              <li><a class="arrow" href="#skills" onmouseover="playHoverSound()"><i class="fas fa-arrow-alt-right"></i>Skills</a></li>
+              <li><a class="arrow" href="#contact" onmouseover="playHoverSound()"><i class="fas fa-arrow-alt-right"></i>Contact</a></li>
+              <li><a class="arrow" href="#socials" onmouseover="playHoverSound()"><i class="fas fa-arrow-alt-right"></i>Socials</a></li>
             </ol>
           </div>
         </div>
+
         <div class="about-page hide" id="about-me">
           <h1 class="title2">My Name is David!</h1>
           <p class="about-p">I am 23 years old and have been pursuing a degree in software engineering. At the same time, I have been working in logistics operations for close to 3 years.</p>
           <button id="backButton" onclick="goBack()">
-            <img
-              src="assets/NicePng_red-cross-mark-png_3625552.png"
-              alt="buttonX" id="backButttonRed"
-              style="max-width: 25px; max-height: 25px;">
+            <img src="assets/NicePng_red-cross-mark-png_3625552.png" alt="buttonX" id="backButttonRed" style="max-width: 25px; max-height: 25px;">
           </button>
         </div>
+
         <div class="skills-page hide" id="skills">
           <h1 class="title2"> My Skills</h1>
           <p>
-            I'm currently in my senior year of the software engineering track. While I wouldn't label myself as an expert, I feel at ease working with various programming languages. Most importantly, I have a strong willingness to learn and persevere regardless of the challenge or starting point.</p>
-          <img 
-            src="assets/hmtl5.png" 
-            alt="htmlLogo"
-            id="logo1">
-          <img 
-            src="assets/python logo.png" 
-            alt="pythonLogo"
-            id="logo2">
-          <!-- Add more images or content as needed -->
+            I'm currently in my senior year of the software engineering track. While I wouldn't label myself as an expert, I feel at ease working with various programming languages. Most importantly, I have a strong willingness to learn and persevere regardless of the challenge or starting point.
+          </p>
+          <img src="assets/hmtl5.png" alt="htmlLogo" id="logo1">
+          <img src="assets/python logo.png" alt="pythonLogo" id="logo2">
           <button id="backButton" onclick="goBack()">
-            <img
-              src="assets/NicePng_red-cross-mark-png_3625552.png"
-              alt="buttonX" id="backButttonRed"
-              style="max-width: 25px; max-height: 25px;">
+            <img src="assets/NicePng_red-cross-mark-png_3625552.png" alt="buttonX" id="backButttonRed" style="max-width: 25px; max-height: 25px;">
           </button>
         </div>
-      </div>  
-      <div class="board">
+
+        <div class="contact-page hide" id="contact">
+          <h1 class="title3">Contact Information</h1>
+          <p>
+            Don't hesitate to click any of the links to view my contact information, please don't hesitate to reach out!
+          </p>
+          <div class="logo-container">
+            <a href="https://www.linkedin.com/in/david-k-6687211b7/">
+              <img src="assets/linkedin logo.png" alt="linkedin" id="linkedinLogo">
+            </a>
+            <img src="assets/insta logo.png" alt="instagram" id="instaLogo">
+            <img src="assets/New Project (2).png" alt="gitHub" id="gitLogo" href>
+          </div>
+          <button id="backButton" onclick="goBack()">
+            <img src="assets/NicePng_red-cross-mark-png_3625552.png" alt="buttonX" id="backButttonRed" style="max-width: 25px; max-height: 25px;">
+          </button>
+        </div>
+
       </div>
+
+      <div class="board"></div>
       <div class="bottom">
         <div class="bottom2">
           <div class="stripes2"></div>
         </div>
       </div>
+
     </div>
   </div>
+  <audio src="assets/Menu-Button-Press-G-www.fesliyanstudios.com.mp3" id="clickSound" type="audio/mp3"></audio>
+  <audio id="hoverSound" src="assets/Menu-Selection-Change-L-www.fesliyanstudios.com.mp3" type="audio/mp3"></audio>
   <script defer src="8-bit.js"></script>
 </body>
+
 </html>
