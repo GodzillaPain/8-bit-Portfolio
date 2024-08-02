@@ -478,8 +478,8 @@ li {
   justify-content: center;
   flex-direction: column;
   top: 100%;
-  height: 100px;
-  max-height: 100px;
+  height: 100vh;
+  max-height: 100vh;
   width: 60vw;
   border: 5px solid black;  
   box-shadow:
@@ -660,7 +660,6 @@ justify-content: center;
   max-height: 20vh;
 }
 
-<<<<<<< Updated upstream
 
 /*Contact Page*/
 
@@ -702,116 +701,4 @@ justify-content: center;
 .logo-container img {
   margin-right: 10px;
   height: 10vh;
-=======
-@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
-.hide {
-    display: none;
-}
-
-#run1, #run2, #run3, #run4 {
-    position: absolute;
-    bottom: 0;
-    left: 100%; 
-    transform: translateX(-50%); 
-}
-
-#screen-container {
-    width: 100vw;
-    height: 65vh;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-image: url(assets/background.jpg);
-}
-
-#background1 {
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto; 
-    object-fit: cover;
-}
-
-#character {
-    position: absolute;
-    bottom: 15%;
-    left: 10%;
-    display: flex;
-}
-
-.jump {
-    transition: transform 0.5s ease-in-out;
-}
-
-.jump-animation {
-    transform: translateY(-120px);
-}
-
-.paused {
-    animation-play-state: paused;
-}
-#character.jump.paused {
-    animation-play-state: paused;
-}
-
-#character img.paused {
-    animation-play-state: paused;
-}
-
-.rock {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 64%;
-    left: 100vw;   
-    animation: rock 3s infinite linear;
-}
-
-@keyframes rock {
-    0% { left: 100vw; } 
-    100% { left: -1500px; } 
-}
-
-#gameEnd {
-    text-align: center;
-}
-
-.image-text-container {
-    position: relative;
-}
-
-#Alert {
-    width: 100%; 
-    height: auto;
-}
-
-.alertText {
-    color: black;
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    width: 80%;
-    font-family: 'Press Start 2P';
-}
-
-
-#score {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white; 
-    font-size: 16px; 
-    font-family: 'Press Start 2P'; 
->>>>>>> Stashed changes
 }
